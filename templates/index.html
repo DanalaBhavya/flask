@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+        <script type="text/javascript" src="{{url_for('static',filename='script.js')  }}">
+             
+        </script>
+    </head>
+    <body>
+        <h2>HTML forms</h2>
+        <form action="/submit" method="post">
+            <label for="science">Science:</label><br>
+            <input type="text" id="science" name="science" value="0"><br>
+            <label for="maths">Maths:</label><br>
+            <input type="text" id="maths" name="maths" value="0"><br><br>
+            <input type="submit" value="Submit">
+
+
+        </form>
+        <p>If you click the "Submit" button, the form will be sent to a page called "/submit" </p>
+    </body>
+
+</html>
